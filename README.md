@@ -1,9 +1,14 @@
 # possGame — Nexus
 
-Gioco strategico Android a turni, offline, contro IA a difficoltà crescente.
+Gioco tattico Android a turni, completamente offline.
 
-Prima release: **Nexus**, griglia 5×5, quattro pedine per parte, tre punti strategici.
+- Scacchiera 5×5, quattro pedine per parte, tre obiettivi.
+- Una mossa ortogonale o cattura adiacente per turno.
+- Vittoria territoriale solo **all'inizio del proprio turno successivo**.
+- Blocco: chi non può muovere perde; ripetizione tripla o 100 mezze mosse: patta.
+- Motore, IA, UI e salvataggio indipendenti.
 
-Specifica MVP e criteri di accettazione: [issue #2](https://github.com/Dydiesis/Possgame/issues/2).
+Specifiche e registro dei test: [issue #2](https://github.com/Dydiesis/Possgame/issues/2).
+Coordinamento: [issue #1](https://github.com/Dydiesis/Possgame/issues/1).
 
-La compilazione di `app-debug.apk` avviene tramite GitHub Actions dopo ogni push su `main`.
+GitHub Actions esegue i test, compila una APK debug e pubblica un artifact dopo ogni push su `main`.
